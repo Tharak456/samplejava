@@ -11,7 +11,7 @@ pipeline {
         stage('codereview-pmd') {
 			steps {
                 echo 'codereview..'
-				bat label: '', script: 'mvn -P metrics  pmd:pmd'
+				bat label: '', script: 'mvn -P metrics pmd:pmd'
             }
         }
         stage('unit-test') {
