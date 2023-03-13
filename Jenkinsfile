@@ -5,7 +5,7 @@ pipeline {
 			steps {
                 echo 'compiling..'
 				git 'https://github.com/Tharak456/samplejava.git'
-				bat label: '', script: 'mvn compile'
+				bat label: '', script: 'mvn  compile'
             }
         }
         stage('codereview-pmd') {
