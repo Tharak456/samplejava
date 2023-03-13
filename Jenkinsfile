@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('compile') {
+        stage ('compile') {
 			steps {
                 echo 'compiling..'
 				git 'https://github.com/Tharak456/samplejava.git'
