@@ -5,13 +5,13 @@ pipeline {
 			steps {
                 echo 'compiling..'
 				git 'https://github.com/Tharak456/samplejava.git'
-				bat label: '', script: 'mvn compile'
+				bat label: '', script: 'mvn  compile'
             }
         }
         stage('codereview-pmd') {
 			steps {
                 echo 'codereview..'
-				bat label: '', script: 'mvn -P metrics pmd:pmd'
+				bat label: '', script: 'mvn -P metrics  pmd:pmd'
             }
         }
         stage('unit-test') {
